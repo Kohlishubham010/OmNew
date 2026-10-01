@@ -82,7 +82,7 @@ const Home = () => {
 
             <div className="image-main">
               <img
-                src="/src/assets/ab-1.png"
+                src="./img/ab-1.png"
                 alt="OM Engineering Extrusion Machine"
               />
             </div>
@@ -90,7 +90,7 @@ const Home = () => {
 
             <div className="image-bottom">
               <img
-                src="/src/assets/ab-2.png"
+                src="./img/ab-2.png"
                 alt="Plastic Pipe Plant Machine"
               />
             </div>
@@ -98,7 +98,7 @@ const Home = () => {
 
             <div className="image-roll">
               <img
-                src="/src/assets/ab-3.png"
+                src="./img/ab-3.png"
                 alt="Pipe Extrusion Machine"
               />
             </div>
@@ -296,7 +296,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-1.jpg"
+                  src="./img/pc-1.jpg"
                   alt="PVC Garden Pipe Plant"
                 />
               </div>
@@ -325,7 +325,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-2.jpg"
+                  src="./img/pc-2.jpg"
                   alt="PVC Braided Hose Pipe Plant"
                 />
               </div>
@@ -354,7 +354,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-3.jpg"
+                  src="./img/pc-3.jpg"
                   alt="LLDPE Delivery Kissan Pipe Plant"
                 />
               </div>
@@ -383,7 +383,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-4.jpg"
+                  src="./img/pc-4.jpg"
                   alt="PVC Suction Hose Pipe Plant"
                 />
               </div>
@@ -412,7 +412,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-5.jpg"
+                  src="./img/pc-5.jpg"
                   alt="PVC Spiral Hose Pipe Plant"
                 />
               </div>
@@ -441,7 +441,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-6.jpg"
+                  src="./img/pc-6.jpg"
                   alt="PVC Transparent Pipe Plant"
                 />
               </div>
@@ -469,7 +469,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-7.jpg"
+                  src="./img/pc-7.jpg"
                   alt="HDPE Pipe Plant"
                 />
               </div>
@@ -498,7 +498,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-8.jpg"
+                  src="./img/pc-8.jpg"
                   alt="PVC Profile Plant"
                 />
               </div>
@@ -527,7 +527,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-9.png"
+                  src="./img/pc-9.png"
                   alt="PVC Electrical Conduit Plant"
                 />
               </div>
@@ -556,7 +556,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-10.jpg"
+                  src="./img/pc-10.jpg"
                   alt="PVC Duct Pipe Plant"
                 />
               </div>
@@ -585,7 +585,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-11.jpg"
+                  src="./img/pc-11.jpg"
                   alt="PPR Pipe Plant"
                 />
               </div>
@@ -614,7 +614,7 @@ const Home = () => {
             >
               <div className="machine-image">
                 <img
-                  src="/src/assets/pc-12.jpg"
+                  src="./img/pc-12.jpg"
                   alt="Multilayer Pipe Plant"
                 />
               </div>
@@ -923,7 +923,7 @@ const Home = () => {
             <div className="machine-image-wrapper">
 
               <img
-                src="/src/assets/whychoose-1.png"
+                src="./img/whychoose-1.png"
                 alt="OM Engineering Plastic Extrusion Machine"
               />
 
@@ -1279,7 +1279,7 @@ const Home = () => {
                 <div className="testimonial-user">
 
                   <img
-                    src="/src/assets/p-1.png"
+                    src="./img/p-1.png"
                     alt="Shree Balaji Industries"
                   />
 
@@ -1312,7 +1312,7 @@ const Home = () => {
                 <div className="testimonial-user">
 
                   <img
-                    src="/src/assets/p-2.png"
+                    src="./img/p-2.png"
                     alt="Agarwal Industries"
                   />
 
@@ -1345,7 +1345,7 @@ const Home = () => {
                 <div className="testimonial-user">
 
                   <img
-                    src="/src/assets/p-3.png"
+                    src="./img/p-3.png"
                     alt="OM Food Products"
                   />
 
@@ -1378,7 +1378,7 @@ const Home = () => {
                 <div className="testimonial-user">
 
                   <img
-                    src="/src/assets/p-4.png"
+                    src="./img/p-4.png"
                     alt="Sharma Manufacturing"
                   />
 
@@ -1411,7 +1411,7 @@ const Home = () => {
                 <div className="testimonial-user">
 
                   <img
-                    src="/src/assets/p-5.png"
+                    src="./img/p-5.png"
                     alt="Gupta Enterprises"
                   />
 
@@ -1444,7 +1444,7 @@ const Home = () => {
                 <div className="testimonial-user">
 
                   <img
-                    src="/src/assets/p-6.png"
+                    src="./img/p-6.png"
                     alt="Shree Ganesh Industries"
                   />
 
