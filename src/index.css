@@ -3270,7 +3270,7 @@ display:none;
   color: #333333;
 
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3; */
   -webkit-box-orient: vertical;
 
   overflow: hidden;
