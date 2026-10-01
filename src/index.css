@@ -1,15 +1,12 @@
 :root{
   --blue:#0044af;
   --yellow:#ffbf1b;
-
 }
 /* footer */
 .hk-footer,
 .hk-footer * {
     box-sizing: border-box;
 }
-
-
 .hk-footer {
     --hk-footer-background: none;
     --hk-footer-color: black;

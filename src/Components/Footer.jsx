@@ -1,7 +1,16 @@
 
 import React from "react";
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaInstagram,
+  FaLocationDot,
+  FaPhone,
+  FaUserTie,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
+const currentYear = new Date().getFullYear();
 
 
 const Footer = () => {
@@ -66,7 +75,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="Om Engineering Works on Facebook"
               >
-                <i className="fa-brands fa-facebook-f"></i>
+                <FaFacebookF />
               </a>
 
 
@@ -76,7 +85,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="Om Engineering Works on Instagram"
               >
-                <i className="fa-brands fa-instagram"></i>
+                <FaInstagram />
               </a>
 
             </div>
@@ -197,7 +206,7 @@ const Footer = () => {
             >
 
               <span className="hk-footer-contact__icon">
-                <i className="fa-solid fa-user-tie"></i>
+                <FaUserTie />
               </span>
 
               <span>
@@ -215,7 +224,7 @@ const Footer = () => {
             >
 
               <span className="hk-footer-contact__icon">
-                <i className="fa-solid fa-phone"></i>
+                <FaPhone />
               </span>
 
               <span>
@@ -233,7 +242,7 @@ const Footer = () => {
             >
 
               <span className="hk-footer-contact__icon">
-                <i className="fa-solid fa-envelope"></i>
+                <FaEnvelope />
               </span>
 
               <span>
@@ -253,7 +262,7 @@ const Footer = () => {
             >
 
               <span className="hk-footer-contact__icon">
-                <i className="fa-solid fa-location-dot"></i>
+                <FaLocationDot />
               </span>
 
               <span>
@@ -274,7 +283,7 @@ const Footer = () => {
         <div className="hk-footer__bottom">
 
           <p>
-            &copy; {new Date().getFullYear()}
+            &copy; {currentYear}
             {" "}
             Om Engineering Work. All rights reserved.
           </p>

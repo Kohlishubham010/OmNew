@@ -1,5 +1,12 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import {
+  FaChartLine,
+  FaGears,
+  FaHeadset,
+  FaLightbulb,
+  FaRegSquareCheck,
+} from "react-icons/fa6";
 
 
 const Home = () => {
@@ -399,7 +406,7 @@ const Home = () => {
 
             {/* Small Heading */}
             <div className="why-small-title">
-                <i className="fa-regular fa-square-check"></i>
+                <FaRegSquareCheck />
                 <span>Why Choose Us</span>
             </div>
 
@@ -429,7 +436,7 @@ const Home = () => {
             <div className="why-feature-card">
 
                 <div className="why-feature-icon">
-                    <i className="fa-solid fa-gears"></i>
+                    <FaGears />
                 </div>
 
                 <div className="why-feature-content">
@@ -456,7 +463,7 @@ const Home = () => {
             <div className="why-feature-card">
 
                 <div className="why-feature-icon">
-                    <i className="fa-solid fa-lightbulb"></i>
+                    <FaLightbulb />
                 </div>
 
                 <div className="why-feature-content">
@@ -483,7 +490,7 @@ const Home = () => {
             <div className="why-feature-card">
 
                 <div className="why-feature-icon">
-                    <i className="fa-solid fa-headset"></i>
+                    <FaHeadset />
                 </div>
 
                 <div className="why-feature-content">
@@ -510,7 +517,7 @@ const Home = () => {
             <div className="why-feature-card">
 
                 <div className="why-feature-icon">
-                    <i className="fa-solid fa-chart-line"></i>
+                    <FaChartLine />
                 </div>
 
                 <div className="why-feature-content">
