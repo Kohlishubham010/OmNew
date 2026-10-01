@@ -50,7 +50,7 @@ const Home = () => {
           {/* Banner 3 */}
           <Carousel.Item>
             <img
-              src="../"
+              src="../assets/banner-3.png"
               className="d-block w-100"
               alt="Banner"
             />
