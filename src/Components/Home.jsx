@@ -30,7 +30,7 @@ const Home = () => {
           {/* Banner 1 */}
           <Carousel.Item>
             <img
-              src="../assets/banner-1.png"
+              src="./public/banner-1.png"
               className="d-block w-100"
               alt="Banner"
             />
@@ -40,7 +40,7 @@ const Home = () => {
           {/* Banner 2 */}
           <Carousel.Item>
             <img
-              src="../assets/banner-2.png"
+              src="./public/banner-2.png"
               className="d-block w-100"
               alt="Banner"
             />
@@ -50,7 +50,7 @@ const Home = () => {
           {/* Banner 3 */}
           <Carousel.Item>
             <img
-              src="../"
+              src="./public/banner-3.png"
               className="d-block w-100"
               alt="Banner"
             />
