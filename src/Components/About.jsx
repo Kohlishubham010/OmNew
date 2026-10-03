@@ -1,11 +1,15 @@
 import React from "react";
 const About = () => {
     return (
-        <div>
-            <h1>About Us</h1>
-            <p>
-                Welcome to Hitkari Namkeen! We are a leading manufacturer, wholesaler, and supplier of high-quality namkeen products. Our mission is to provide delicious and crispy namkeen with reliable service across India.  </p>  
-        </div>
+        <>
+        {/* contact banenr */}
+        <section>
+            <div>
+                <img src="./img/ab-banner.png" alt="Contact Banner" className="img-fluid w-100" />
+            </div>  
+        </section>
+        {/* end contact banner */}
+        </>
     )
 }
 export default About;

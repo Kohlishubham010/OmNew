@@ -42,7 +42,7 @@ const Footer = () => {
               className="hk-footer__logo-link"
             >
               <img
-                src="./src/assets/logo-1.png"
+                src="./img/logo-1.png"
                 alt="Om Engineering Works"
                 className="hk-footer__logo"
                 loading="lazy"

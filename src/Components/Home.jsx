@@ -11,10 +11,6 @@ import {
 
 const Home = () => {
 
-
-
-
-
   return (
     <>
       {/* banner part */}
