@@ -6,7 +6,7 @@
 //     <nav className="navbar navbar-expand-lg navbar-light bg-light">
 //       <div className="container">
 
-//         <Link className="navbar-brand" to="/home">
+//         <Link className="navbar-brand" to="/">
 //           <img
 //             src="./src/assets/logo-1.png"
 //             alt="Logo"
@@ -30,7 +30,7 @@
 //           <ul className="navbar-nav ms-auto">
 
 //             <li className="nav-item">
-//               <Link className="nav-link animated-link" to="/home">
+//               <Link className="nav-link animated-link" to="/">
 //                 Home
 //               </Link>
 //             </li>
@@ -177,7 +177,7 @@ const Navbar = () => {
 
         <Link
           className="navbar-logo"
-          to="/home"
+          to="/"
           onClick={closeMenu}
         >
           <img
@@ -215,7 +215,7 @@ const Navbar = () => {
             <li>
               <Link
                 className="nav-link active"
-                to="/home"
+                to="/"
                 onClick={closeMenu}
               >
                 Home
