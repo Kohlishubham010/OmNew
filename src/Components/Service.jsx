@@ -1,4 +1,5 @@
-function Services() {
+import React from "react";
+function Service() {
   return (
     <div className="container py-5">
       <h1>Services</h1>
@@ -7,4 +8,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Service;
