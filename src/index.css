@@ -6689,12 +6689,864 @@ font-family: "Roboto", sans-serif;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 15px;
+    text-align: center;
+   
 }
 .product-section p{
 color:rgb(95, 107, 112);
-
 font-family :Roboto,sans-serif;
 font-size:16px;
 font-weight:400;
 text-align: justify;
+}
+
+/* cart */
+/* ==================================================
+   FINAL PRODUCT CARD FIX
+   Put this CSS at the VERY END of your stylesheet
+================================================== */
+
+.product-section {
+    width: 100%;
+    padding: 20px 12px 40px;
+    background: #f5f8f9;
+}
+
+.product-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =================================
+   MAIN CARD
+================================= */
+
+.product-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    background: #fff;
+    border: 1px solid #dfe5e8;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 35px rgba(20, 40, 50, 0.06);
+
+    min-height: 590px;
+}
+
+
+/* =================================
+   LEFT SIDE
+================================= */
+
+.product-left {
+    position: relative;
+
+    min-height: 590px;
+
+    background: #f1f4f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Image container */
+
+.product-img-box {
+    width: 100%;
+    height: 100%;
+    min-height: 590px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 35px 35px;
+}
+
+
+/* IMPORTANT IMAGE FIX */
+
+.product-main-img {
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 480px !important;
+    max-height: 500px !important;
+
+    object-fit: contain !important;
+
+    position: relative !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+}
+
+
+/* image hover */
+
+.product-left:hover .product-main-img {
+    transform: scale(1.045);
+}
+
+
+/* =================================
+   BADGE FIX
+================================= */
+
+.quality-badge {
+    position: absolute !important;
+
+    top: 20px !important;
+    left: 20px !important;
+
+    width: 95% !important;
+    height: 90% !important;
+
+    min-width: auto !important;
+    min-height: auto !important;
+
+    padding: 9px 18px !important;
+
+    border-radius: 30px !important;
+
+    background: #fff !important;
+
+    color: #c30024 !important;
+
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+
+    z-index: 10 !important;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08) !important;
+}
+
+
+/* =================================
+   RIGHT SIDE
+================================= */
+
+.product-right {
+    min-width: 0;
+
+    padding: 34px 34px 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+/* Heading */
+
+.product-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.product-category {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--blue);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+.product-title-row h2 {
+    margin: 0;
+
+    color: #09283a;
+
+    font-size: 28px;
+    line-height: 1.25;
+
+    font-weight: 750;
+}
+
+
+/* Icon */
+
+.product-small-icon {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #e7f4f3;
+
+    color: #159a98;
+
+    font-size: 21px;
+}
+
+
+/* =================================
+   PRICE
+================================= */
+
+.product-price-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 20px;
+}
+
+.product-price {
+    color: #09283a;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.product-unit {
+    color: #7b8990;
+
+    font-size: 13px;
+
+    margin-right: 13px;
+}
+
+.latest-price-link {
+    color: #002a7c;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-bottom: 1px dashed #002a7c;
+}
+
+
+/* =================================
+   MOQ
+================================= */
+
+.product-moq {
+    margin-top: 20px;
+
+    padding: 14px 20px;
+
+    background: #f7f9fa;
+
+    border-left: 3px solid #c30024;
+
+    color: #64767f;
+
+    font-size: 13px;
+}
+
+.product-moq strong {
+    margin-left: 4px;
+
+    color: #112b38;
+}
+
+
+/* =================================
+   SPECIFICATIONS
+================================= */
+
+.specification-card {
+    margin-top: 20px;
+
+    border: 1px solid #dbe3e6;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.spec-heading {
+    padding: 15px 16px;
+
+    background: #f1f5f6;
+
+    border-bottom: 1px solid #dbe3e6;
+
+    color: #09283a;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.spec-item {
+    min-height: 41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 10px 13px;
+
+    border-bottom: 1px solid #e3e8ea;
+
+    font-size: 12px;
+}
+
+.spec-item:nth-child(odd) {
+    border-right: 1px solid #e3e8ea;
+}
+
+.spec-item:nth-last-child(-n + 2) {
+    border-bottom: 0;
+}
+
+.spec-item span {
+    color: #74858d;
+}
+
+.spec-item strong {
+    color: #081f2d;
+
+    text-align: right;
+
+    font-weight: 700;
+}
+
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.product-description {
+    margin: 20px 0 18px;
+
+    color: #61747d;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.product-description strong {
+    color: #102a38;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.product-buttons {
+    display: flex;
+
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.enquire-btn,
+.call-btn {
+    min-height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 28px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.enquire-btn {
+    background: #c30024;
+
+    border: 1px solid #c30024;
+
+    color: #fff;
+}
+
+.enquire-btn:hover {
+    background: #9d001d;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+.call-btn {
+    background: #fff;
+
+    border: 1px solid #c30024;
+
+    color: #c30024;
+}
+
+.call-btn:hover {
+    background: #c30024;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 991px) {
+
+    .product-card {
+        grid-template-columns: 40% 60%;
+    }
+
+    .product-left,
+    .product-img-box {
+        min-height: 520px;
+    }
+
+    .product-main-img {
+        max-width: 400px !important;
+        max-height: 430px !important;
+    }
+
+    .product-right {
+        padding: 28px 24px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .product-card {
+        display: block;
+
+        min-height: auto;
+    }
+
+    .product-left {
+        min-height: 360px;
+    }
+
+    .product-img-box {
+        min-height: 360px;
+
+        padding: 55px 20px 20px;
+    }
+
+    .product-main-img {
+        width: 90% !important;
+
+        max-width: 340px !important;
+        max-height: 320px !important;
+    }
+
+    .quality-badge {
+        top: 14px !important;
+        left: 14px !important;
+
+        padding: 8px 14px !important;
+
+        font-size: 11px !important;
+    }
+
+    .product-right {
+        padding: 24px 18px;
+    }
+
+    .product-title-row h2 {
+        font-size: 22px;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-item {
+        border-right: none !important;
+        border-bottom: 1px solid #e3e8ea !important;
+    }
+
+    .spec-item:last-child {
+        border-bottom: 0 !important;
+    }
+
+    .product-buttons {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .enquire-btn,
+    .call-btn {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   FINAL MOBILE FIX
+========================================== */
+
+@media (max-width: 767px) {
+
+    .product-section {
+        width: 100%;
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+
+        padding: 15px 12px 30px;
+    }
+
+    .product-container {
+        width: 100%;
+        height: auto !important;
+        min-height: auto !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* MAIN CARD */
+    .product-card {
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+
+        overflow: hidden !important;
+
+        border-radius: 16px;
+    }
+
+
+    /* ===============================
+       LEFT SIDE
+    =============================== */
+
+    .product-left {
+        position: relative;
+
+        width: 100% !important;
+
+        height: 360px !important;
+        min-height: 360px !important;
+
+        flex: none !important;
+
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+    }
+
+
+    .product-img-box {
+        width: 100% !important;
+        height: 100% !important;
+
+        min-height: 0 !important;
+
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px 10px 10px !important;
+    }
+
+
+    .product-main-img {
+        display: block !important;
+
+        width: 90% !important;
+        height: 100% !important;
+
+        max-width: 340px !important;
+        max-height: 300px !important;
+
+        object-fit: contain !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+
+    /* BADGE FIX */
+
+    .quality-badge {
+        position: absolute !important;
+
+        top: 14px !important;
+        left: 14px !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        min-width: auto !important;
+        min-height: auto !important;
+
+        padding: 8px 14px !important;
+
+        border-radius: 25px !important;
+
+        font-size: 11px !important;
+
+        white-space: nowrap !important;
+
+        z-index: 5;
+    }
+
+
+    /* ===============================
+       RIGHT SIDE - IMPORTANT FIX
+    =============================== */
+
+    .product-right {
+        display: block !important;
+
+        width: 100% !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+
+        flex: none !important;
+
+        position: relative !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        overflow: visible !important;
+
+        padding: 25px 18px 28px !important;
+
+        background: #ffffff;
+
+        z-index: 2;
+    }
+
+
+    /* Heading */
+
+    .product-title-row {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .product-category {
+        display: block;
+
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+
+    .product-title-row h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+
+    .product-small-icon {
+        width: 42px;
+        height: 42px;
+
+        min-width: 42px;
+
+        font-size: 18px;
+    }
+
+
+    /* PRICE */
+
+    .product-price-area {
+        width: 100%;
+
+        margin-top: 18px;
+    }
+
+
+    .product-price {
+        font-size: 24px;
+    }
+
+
+    /* MOQ */
+
+    .product-moq {
+        width: 100%;
+
+        margin-top: 18px;
+
+        padding: 12px 14px;
+
+        font-size: 12px;
+    }
+
+
+    /* SPECIFICATION */
+
+    .specification-card {
+        width: 100%;
+
+        margin-top: 18px;
+    }
+
+
+    .spec-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .spec-item {
+        width: 100%;
+
+        border-right: none !important;
+
+        border-bottom: 1px solid #e3e8ea !important;
+
+        padding: 11px 12px;
+    }
+
+
+    .spec-item:last-child {
+        border-bottom: 0 !important;
+    }
+
+
+    /* DESCRIPTION */
+
+    .product-description {
+        display: block !important;
+
+        width: 100%;
+
+        margin: 18px 0;
+
+        font-size: 13px;
+        line-height: 1.7;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+
+    /* BUTTON */
+
+    .product-buttons {
+        display: grid !important;
+
+        grid-template-columns: 1fr 1fr;
+
+        width: 100%;
+
+        gap: 10px;
+
+        padding-top: 0 !important;
+    }
+
+
+    .enquire-btn,
+    .call-btn {
+        width: 100%;
+
+        min-height: 44px;
+
+        padding: 0 10px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+    .product-left {
+        height: 320px !important;
+        min-height: 320px !important;
+    }
+
+
+    .product-main-img {
+        max-height: 270px !important;
+    }
+
+
+    .product-right {
+        padding: 22px 15px 25px !important;
+    }
+
+
+    .product-title-row h2 {
+        font-size: 20px;
+    }
+
+
+    .product-buttons {
+        grid-template-columns: 1fr !important;
+    }
+
 }

@@ -153,30 +153,30 @@ const Footer = () => {
             <ul>
 
               <li>
-                <Link to="/serv">
+                <Link to="/PVC-braided-hose-pipe-plant">
                   PVC Braided Pipe Plant
                 </Link>
               </li>
 
               <li>
-                <Link to="/serv">
+                <Link to="/Tubing-pipe-plant">
                   PVC Tubing Pipe Plant
                 </Link>
               </li>
 
 
               <li>
-                <Link to="/serv">
+                <Link to="/Suction-pipe-plant">
                   Suction Pipe Plant
                 </Link>
               </li>
               <li>
-                <Link to="/serv">
+                <Link to="/HDPE-pipe-plant">
                   HDPE Pipe Plant
                 </Link>
               </li>
               <li>
-                <Link to="/serv">
+                <Link to="/Rigid-pvc-pipe-plant">
                   Rigid PVC Pipe Making Plant
                 </Link>
               </li>

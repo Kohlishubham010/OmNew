@@ -26,6 +26,367 @@ const Caterpillar = () => {
                     </div>
                 </div>
             </section>
+            {/* part 1 */}
+            <section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="/pro/17.1.png"
+            alt="Caterpillar Machine (Haul-off)"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              CATERPILLAR MACHINE
+            </span>
+
+            <h2>
+              Caterpillar Machine (Haul-off)
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Quote */}
+        <div className="product-price-area">
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Product Type</span>
+              <strong>Caterpillar Machine (Haul-off)</strong>
+            </div>
+
+            <div className="spec-item spec-item-full">
+              <span>General Use</span>
+              <strong>
+                Haul-off machine for extrusion processes
+              </strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Material</span>
+              <strong>Metal body</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Type</span>
+              <strong>Industrial equipment</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Moving Type</span>
+              <strong>Stationary</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Capacity</span>
+              <strong>Medium</strong>
+            </div>
+
+            <div className="spec-item spec-item-full">
+              <span>Speed</span>
+              <strong>
+                Moderate speed for pulling function in extrusion line
+              </strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{/* part 2 */}
+<section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="/pro/17.2.png"
+            alt="Haul-Off (Caterpillar)"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              HAUL-OFF CATERPILLAR
+            </span>
+
+            <h2>
+              Haul-Off (Caterpillar)
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Quote */}
+        <div className="product-price-area">
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Product Type</span>
+              <strong>Haul-Off (Caterpillar)</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>General Use</span>
+              <strong>Cable extrusion processes</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Material</span>
+              <strong>Metal</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Type</span>
+              <strong>Industrial machine</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Moving Type</span>
+              <strong>Stationary</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Speed</span>
+              <strong>Adjustable</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Automatic</span>
+              <strong>Yes</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{/* part 3 */}
+<section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="/pro/17.3.png"
+            alt="Haul Off Unit"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              HAUL OFF UNIT
+            </span>
+
+            <h2>
+              Haul Off Unit
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Quote */}
+        <div className="product-price-area">
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Product Type</span>
+              <strong>Haul Off Unit</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>General Use</span>
+              <strong>Plastic machinery application</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Material</span>
+              <strong>Metal</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Type</span>
+              <strong>Caterpillar Type</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Computerized</span>
+              <strong>Yes</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Automatic</span>
+              <strong>Yes</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Control System</span>
+              <strong>PLC Controlled</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </>
   )
 }

@@ -25,6 +25,139 @@ const Tubingpipeplant = () => {
                     </div>
                 </div>
             </section>
+            {/* part 1 */}
+            <section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+
+        <div className="product-img-box">
+          <img
+            src="/pro/2.1.png"
+            alt="PVC Tubing Pipe Plant"
+            className="product-main-img"
+          />
+        </div>
+
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+
+          <div>
+            <span className="product-category">
+              PVC TUBING PIPE PLANT
+            </span>
+
+            <h2>
+              PVC Tubing Pipe Plant
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+
+        </div>
+
+        {/* Price */}
+        <div className="product-price-area">
+
+          <span className="product-price">
+            ₹10,50,000
+          </span>
+
+          <span className="product-unit">
+            INR
+          </span>
+
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Motor Power</span>
+              <strong>30 HP</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Plastic Processed</span>
+              <strong>PVC</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Speed</span>
+              <strong>20-80 m/min</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Model No</span>
+              <strong>PVC-TUBE-800</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Driven Type</span>
+              <strong>Gear/Chain Driven</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Automation Grade</span>
+              <strong>Automatic</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Frequency</span>
+              <strong>50/60 Hz</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
         </>
   )
 }

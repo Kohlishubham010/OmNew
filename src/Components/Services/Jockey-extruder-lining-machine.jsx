@@ -25,6 +25,252 @@ const Jockeyextruderliningmachine = () => {
                     </div>
                 </div>
             </section>
+            {/* part 1 */}
+            <section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="./img/about-info.png"
+            alt="Zebra Garden Pipe Machine"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              ZEBRA GARDEN PIPE MACHINE
+            </span>
+
+            <h2>
+              Zebra Garden Pipe Machine
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Quote */}
+        <div className="product-price-area">
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Product Type</span>
+              <strong>Extrusion Machinery</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>General Use</span>
+              <strong>Garden Pipe Extrusion</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Material</span>
+              <strong>Stainless Steel</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Type</span>
+              <strong>Extruder Machine</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Capacity</span>
+              <strong>200 kg/hr</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Weight (kg)</span>
+              <strong>800 kg</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Computerized</span>
+              <strong>Yes</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{/* part 2 */}
+<section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="./img/about-info.png"
+            alt="Double Coating And Zebra Pipe Machine"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              DOUBLE COATING ZEBRA PIPE MACHINE
+            </span>
+
+            <h2>
+              Double Coating And Zebra Pipe Machine
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Price */}
+        <div className="product-price-area">
+
+          <span className="product-price">
+            1.00 - 1.00 INR/Piece
+          </span>
+
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Product Type</span>
+              <strong>Pipe Extrusion Machine</strong>
+            </div>
+
+            <div className="spec-item spec-item-full">
+              <span>General Use</span>
+              <strong>
+                Manufacturing Double Coated Zebra Pipes
+              </strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Material</span>
+              <strong>Stainless Steel</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Type</span>
+              <strong>Automatic Pipe Machine</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Capacity</span>
+              <strong>60-80 kg/hr</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Weight (kg)</span>
+              <strong>1500 kg</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Computerized</span>
+              <strong>Yes</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
         </>
     
   )

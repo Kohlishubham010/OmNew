@@ -25,6 +25,375 @@ const Highspeedmixer = () => {
                     </div>
                 </div>
             </section>
+            {/* part 1 */}
+            <section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="./img/about-info.png"
+            alt="PVC Transparent Pipe High Speed Mixer"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              PVC HIGH SPEED MIXER
+            </span>
+
+            <h2>
+              PVC Transparent Pipe High Speed Mixer
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Quote */}
+        <div className="product-price-area">
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Efficiency (%)</span>
+              <strong>High</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Speed</span>
+              <strong>High Speed</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Automation Grade</span>
+              <strong>Semi-Automatic</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Source</span>
+              <strong>CATALOG</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Driven Type</span>
+              <strong>Electric</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Frequency</span>
+              <strong>50 Hz</strong>
+            </div>
+
+            <div className="spec-item spec-item-full">
+              <span>Installation Guideline</span>
+              <strong>
+                Follow Standard Industrial Guidelines
+              </strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{/* part 2 */}
+<section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="./img/about-info.png"
+            alt="High Speed Mixer"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              HIGH SPEED MIXER
+            </span>
+
+            <h2>
+              High Speed Mixer
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Price */}
+        <div className="product-price-area">
+
+          <span className="product-price">
+            1.00 - 1.00 INR/Piece
+          </span>
+
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Motor Power</span>
+              <strong>15 HP</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Temperature Range</span>
+              <strong>0-120C</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Efficiency (%)</span>
+              <strong>99%</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Production Capacity</span>
+              <strong>500-2000 kg/hr</strong>
+            </div>
+
+            <div className="spec-item spec-item-full">
+              <span>Usage & Applications</span>
+              <strong>
+                Plastic Mixing, PVC Compounding, Granule Mixing
+              </strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Installation Guideline</span>
+              <strong>Foundation Required</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Automation Grade</span>
+              <strong>Automatic</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{/* part 3 */}
+<section className="product-section">
+  <div className="product-container">
+
+    <div className="product-card">
+
+      {/* LEFT SIDE */}
+      <div className="product-left">
+        <div className="product-img-box">
+          <img
+            src="./img/about-info.png"
+            alt="High Speed Mixer-Grinder"
+            className="product-main-img"
+          />
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="product-right">
+
+        <div className="product-title-row">
+          <div>
+            <span className="product-category">
+              HIGH SPEED MIXER-GRINDER
+            </span>
+
+            <h2>
+              High Speed Mixer-Grinder
+            </h2>
+          </div>
+
+          <div className="product-small-icon">
+            <i className="bi bi-gear-fill"></i>
+          </div>
+        </div>
+
+        {/* Quote */}
+        <div className="product-price-area">
+          <a
+            href="/contact"
+            className="latest-price-link"
+          >
+            Get a Price/Quote
+          </a>
+        </div>
+
+        {/* Specifications */}
+        <div className="specification-card">
+
+          <div className="spec-heading">
+            Product Details
+          </div>
+
+          <div className="spec-grid">
+
+            <div className="spec-item">
+              <span>Automation Grade</span>
+              <strong>Manual or Semi-Automatic</strong>
+            </div>
+
+            <div className="spec-item spec-item-full">
+              <span>Installation Guideline</span>
+              <strong>
+                Ensure sturdy foundation and correct power connections
+              </strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Motor Power</span>
+              <strong>5 HP</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Efficiency (%)</span>
+              <strong>High</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Frequency</span>
+              <strong>50 Hz</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Temperature Range</span>
+              <strong>Up to 70C</strong>
+            </div>
+
+            <div className="spec-item">
+              <span>Source</span>
+              <strong>CATALOG</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+        <div className="product-buttons">
+
+          <a
+            href="/contact"
+            className="enquire-btn"
+          >
+            Get a Price/Quote
+          </a>
+
+          <a
+            href="tel:+919899348723"
+            className="call-btn"
+          >
+            Call Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
         </>
   )
 }
