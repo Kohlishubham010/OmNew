@@ -176,7 +176,7 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             <img
-              src="./src/assets/logo-1.png"
+              src="./img/logo-1.png"
               alt="OM Engineering Works"
             />
           </Link>
