@@ -73,7 +73,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "./src/assets/logo-1.png";
+// import logo from "/img";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -176,7 +176,7 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             <img
-              src={logo}
+              src="./src/assets/logo-1.png"
               alt="OM Engineering Works"
             />
           </Link>
