@@ -7,6 +7,7 @@ import {
   FaLocationDot,
   FaPhone,
   FaUserTie,
+  FaWhatsapp,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -15,6 +16,7 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
+    <>
     <footer
       className="hk-footer"
       style={{
@@ -118,7 +120,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="/services">
+                <Link to="#">
                   Our Services
                 </Link>
               </li>
@@ -307,6 +309,18 @@ const Footer = () => {
       </div>
 
     </footer>
+    {/* whatsup */}
+   
+        <a
+      href="https://wa.me/917971190739?text=Hello%20I%20am%20interested%20in%20your%20machines.%20Please%20share%20more%20details."
+      className="whatsapp-fixed-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <FaWhatsapp />
+    </a>
+    </>
   );
 };
 

@@ -35,7 +35,7 @@ const Highspeedmixer = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/21.1.png"
             alt="PVC Transparent Pipe High Speed Mixer"
             className="product-main-img"
           />
@@ -156,7 +156,7 @@ const Highspeedmixer = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/21.2.png"
             alt="High Speed Mixer"
             className="product-main-img"
           />
@@ -283,7 +283,7 @@ const Highspeedmixer = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/21.3.png"
             alt="High Speed Mixer-Grinder"
             className="product-main-img"
           />

@@ -73,49 +73,56 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo-1.png";
-
+import logo from "./src/assets/logo-1.png";
 
 const Navbar = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
 
+  // Close complete mobile menu
   const closeMenu = () => {
     setMenuOpen(false);
     setProductOpen(false);
   };
 
+  // Toggle mobile navbar
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+
+    // Close product dropdown when navbar closes
+    if (menuOpen) {
+      setProductOpen(false);
+    }
+  };
+
+  // Toggle products dropdown
+  const toggleProducts = () => {
+    setProductOpen((prev) => !prev);
+  };
+
   return (
     <>
+      {/* ================= ANNOUNCEMENT BAR ================= */}
 
       <section className="announcement-bar">
-
         <div className="announcement-track">
-
           <div className="announcement-content">
-
             <span className="offer-text">
-              🔥 Special Offer! Get High-Quality Plastic Extrusion Machines at Competitive Prices
+              🔥 Special Offer! Get High-Quality Plastic Extrusion Machines at
+              Competitive Prices
             </span>
 
             <span className="separator">|</span>
 
-            <span>
-              📞 07971190739
-            </span>
+            <span>📞 07971190739</span>
 
             <span className="separator">|</span>
 
-            <span>
-              📱 +91 80108 68917
-            </span>
+            <span>📱 +91 80108 68917</span>
 
             <span className="separator">|</span>
 
-            <span>
-              ✉️ omengineeringwork@gmail.com
-            </span>
+            <span>✉️ omengineeringwork@gmail.com</span>
 
             <span className="separator">|</span>
 
@@ -124,35 +131,26 @@ const Navbar = () => {
             </span>
 
             <span className="separator">|</span>
-
           </div>
 
-
-          {/* Duplicate content for continuous scrolling */}
-
+          {/* Duplicate for continuous scrolling */}
           <div className="announcement-content">
-
             <span className="offer-text">
-              🔥 Special Offer! Get High-Quality Plastic Extrusion Machines at Competitive Prices
+              🔥 Special Offer! Get High-Quality Plastic Extrusion Machines at
+              Competitive Prices
             </span>
 
             <span className="separator">|</span>
 
-            <span>
-              📞 07971190739
-            </span>
+            <span>📞 07971190739</span>
 
             <span className="separator">|</span>
 
-            <span>
-              📱 +91 80108 68917
-            </span>
+            <span>📱 +91 80108 68917</span>
 
             <span className="separator">|</span>
 
-            <span>
-              ✉️ omengineeringwork@gmail.com
-            </span>
+            <span>✉️ omengineeringwork@gmail.com</span>
 
             <span className="separator">|</span>
 
@@ -161,16 +159,13 @@ const Navbar = () => {
             </span>
 
             <span className="separator">|</span>
-
           </div>
-
         </div>
-
       </section>
 
+      {/* ================= NAVBAR ================= */}
 
       <nav className="main-navbar">
-
         <div className="navbar-container">
 
           {/* ================= LOGO ================= */}
@@ -186,28 +181,25 @@ const Navbar = () => {
             />
           </Link>
 
-
-          {/* ================= MOBILE MENU BUTTON ================= */}
+          {/* ================= MOBILE BUTTON ================= */}
 
           <button
+            type="button"
             className={`mobile-menu-btn ${menuOpen ? "active" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={toggleMenu}
             aria-label="Toggle navigation"
+            aria-expanded={menuOpen}
           >
-
             <span></span>
             <span></span>
             <span></span>
-
           </button>
-
 
           {/* ================= NAVIGATION ================= */}
 
           <div
             className={`navbar-menu ${menuOpen ? "show" : ""}`}
           >
-
             <ul className="navbar-links">
 
               {/* HOME */}
@@ -222,7 +214,6 @@ const Navbar = () => {
                 </Link>
               </li>
 
-
               {/* ABOUT */}
 
               <li>
@@ -235,32 +226,35 @@ const Navbar = () => {
                 </Link>
               </li>
 
+              {/* ================= PRODUCTS ================= */}
 
-              {/* PRODUCTS */}
-
-              <li className="products-menu">
-
+              <li
+                className={`products-menu ${
+                  productOpen ? "products-open" : ""
+                }`}
+              >
                 <button
+                  type="button"
                   className="nav-link product-button"
-                  onClick={() => setProductOpen(!productOpen)}
+                  onClick={toggleProducts}
+                  aria-expanded={productOpen}
                 >
+                  <span>Products</span>
 
-                  Products
-
-                  <span className="dropdown-arrow">
+                  <span
+                    className={`dropdown-arrow ${
+                      productOpen ? "open" : ""
+                    }`}
+                  >
                     ⌄
                   </span>
-
                 </button>
 
-
                 <ul
-                  className={`products-dropdown ${productOpen ? "dropdown-show" : ""
-                    }`}
+                  className={`products-dropdown ${
+                    productOpen ? "dropdown-show" : ""
+                  }`}
                 >
-
-                  
-
                   <li>
                     <Link
                       to="/PVC-braided-hose-pipe-plant"
@@ -278,6 +272,7 @@ const Navbar = () => {
                       PVC Tubing Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Suction-pipe-plant"
@@ -286,6 +281,7 @@ const Navbar = () => {
                       Suction Hose Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/HDPE-pipe-plant"
@@ -294,6 +290,7 @@ const Navbar = () => {
                       HDPE Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Rigid-pvc-pipe-plant"
@@ -302,6 +299,7 @@ const Navbar = () => {
                       Rigid PVC Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Dana-plant"
@@ -310,6 +308,7 @@ const Navbar = () => {
                       Dana Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Machinary-parts"
@@ -318,6 +317,7 @@ const Navbar = () => {
                       Machinary Parts
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Soft-pvc-garden-pipe-plant"
@@ -326,6 +326,7 @@ const Navbar = () => {
                       Soft PVC Garden Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Nylon-tube-plant"
@@ -334,6 +335,7 @@ const Navbar = () => {
                       Nylon Tube Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/LLDPE-delivery-pipe-kissan-pipe-plant"
@@ -342,6 +344,7 @@ const Navbar = () => {
                       LLDPE Delivery Pipe Kissan Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/PVC-profile-plant"
@@ -350,6 +353,7 @@ const Navbar = () => {
                       PVC Profile Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Single-screw-extruder"
@@ -358,6 +362,7 @@ const Navbar = () => {
                       Single Screw Extruder
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Extruder-plant"
@@ -366,6 +371,7 @@ const Navbar = () => {
                       Extruder Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/PVC-sleeve-making-machine"
@@ -374,6 +380,7 @@ const Navbar = () => {
                       PVC Sleeve Making Machine
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/PVC-suction-hose-pipe-plant"
@@ -382,6 +389,7 @@ const Navbar = () => {
                       PVC Suction Hose Pipe Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Nylon-mendel-plant"
@@ -390,6 +398,7 @@ const Navbar = () => {
                       Nylon Mendel Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Caterpillar"
@@ -398,6 +407,7 @@ const Navbar = () => {
                       Caterpillar
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/LLDPE-nylon-spiral-cutting-machine"
@@ -406,6 +416,7 @@ const Navbar = () => {
                       LLDPE Nylon Spiral Cutting Machine
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Jockey-extruder-lining-machine"
@@ -414,6 +425,7 @@ const Navbar = () => {
                       Jockey Extruder Lining Machine
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/Pu-tube-plant"
@@ -422,6 +434,7 @@ const Navbar = () => {
                       PU Tube Plant
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/High-speed-mixer"
@@ -430,11 +443,8 @@ const Navbar = () => {
                       High Speed Mixer
                     </Link>
                   </li>
-
                 </ul>
-
               </li>
-
 
               {/* GALLERY */}
 
@@ -448,7 +458,6 @@ const Navbar = () => {
                 </Link>
               </li>
 
-
               {/* CONTACT */}
 
               <li>
@@ -460,31 +469,19 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-
             </ul>
-
 
             {/* ================= RIGHT SIDE ================= */}
 
             <div className="navbar-right">
-
-              {/* PHONE */}
-
               <a
                 href="tel:+917971190739"
                 className="navbar-phone"
               >
-
-                <span className="phone-icon">
-                  ☎
-                </span>
+                <span className="phone-icon">☎</span>
 
                 +91 79711 90739
-
               </a>
-
-
-              {/* CONTACT BUTTON */}
 
               <Link
                 to="/contact"
@@ -493,13 +490,9 @@ const Navbar = () => {
               >
                 Contact Us
               </Link>
-
             </div>
-
           </div>
-
         </div>
-
       </nav>
     </>
   );

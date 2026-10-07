@@ -34,7 +34,7 @@ const Putubeplant = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/20.1.png"
             alt="PU Tube Making Plant"
             className="product-main-img"
           />
@@ -157,7 +157,7 @@ const Putubeplant = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/20.2.png"
             alt="Commercial PU Tube Machine"
             className="product-main-img"
           />
@@ -278,7 +278,7 @@ const Putubeplant = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/20.3.png"
             alt="PU Tube Machine"
             className="product-main-img"
           />

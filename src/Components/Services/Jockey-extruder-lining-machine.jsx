@@ -35,7 +35,7 @@ const Jockeyextruderliningmachine = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/19.1.png"
             alt="Zebra Garden Pipe Machine"
             className="product-main-img"
           />
@@ -154,7 +154,7 @@ const Jockeyextruderliningmachine = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/19.2.png"
             alt="Double Coating And Zebra Pipe Machine"
             className="product-main-img"
           />

@@ -155,7 +155,7 @@ const LLDPEnylonspiralcuttingmachine = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/18.2.png"
             alt="Spiral Cutting Machine"
             className="product-main-img"
           />
@@ -274,7 +274,7 @@ const LLDPEnylonspiralcuttingmachine = () => {
       <div className="product-left">
         <div className="product-img-box">
           <img
-            src="./img/about-info.png"
+            src="/pro/18.3.png"
             alt="Long-running Spiral Cutting Machine"
             className="product-main-img"
           />

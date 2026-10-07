@@ -1,18 +1,155 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
+
 import {
   FaChartLine,
   FaGears,
   FaHeadset,
   FaLightbulb,
   FaRegSquareCheck,
+  FaAward,
+  FaFaceSmile,
+  FaIndustry,
+  FaBoxOpen,
 } from "react-icons/fa6";
 
+const Counter = ({ end, duration = 2000 }) => {
+  const [count, setCount] = useState(0);
 
+  const counterRef = useRef(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+
+          let startTime = null;
+
+          const animateCounter = (time) => {
+            if (!startTime) {
+              startTime = time;
+            }
+
+            const progress = Math.min(
+              (time - startTime) / duration,
+              1
+            );
+
+            setCount(Math.floor(progress * end));
+
+            if (progress < 1) {
+              requestAnimationFrame(animateCounter);
+            } else {
+              setCount(end);
+            }
+          };
+
+          requestAnimationFrame(animateCounter);
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [end, duration]);
+
+  return <span ref={counterRef}>{count}</span>;
+};
 const Home = () => {
+ const [result, setResult] = useState("");
+  const [loading, setLoading] = useState(false);
 
+  // ============================
+  // WEB3FORMS SUBMIT FUNCTION
+  // ============================
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    setLoading(true);
+    setResult("");
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Web3Forms Access Key
+    formData.append(
+      "access_key",
+      "45a47ce6-772f-4478-9471-bfb6a827b517"
+    );
+
+    // Email Subject
+    formData.append(
+      "subject",
+      "New Enquiry From OM Engineering Works Website"
+    );
+
+    // Website name
+    formData.append(
+      "from_name",
+      "OM Engineering Works Website"
+    );
+
+    try {
+
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+
+        setResult(
+          "Thank you! Your message has been sent successfully."
+        );
+
+        // Clear form after successful submission
+        form.reset();
+
+      } else {
+
+        console.error("Web3Forms Error:", data);
+
+        setResult(
+          data.message ||
+          "Something went wrong. Please try again."
+        );
+
+      }
+
+    } catch (error) {
+
+      console.error("Form Submission Error:", error);
+
+      setResult(
+        "Unable to send your message. Please try again later."
+      );
+
+    } finally {
+
+      setLoading(false);
+
+    }
+  };
   return (
     <>
+   
       {/* banner part */}
       <div className="home-banner">
 
@@ -66,6 +203,103 @@ const Home = () => {
 
       </div>
       {/* end banner part */}
+       {/* top */}
+    <section className="home-stats-section">
+
+  <div className="home-stats-container">
+
+    {/* ITEM 1 */}
+
+    <div className="home-stat-card">
+
+      <div className="home-stat-icon">
+        <FaAward />
+      </div>
+
+      <div className="home-stat-content">
+
+        <div className="home-stat-number">
+          <Counter end={14} />
+          <sup>+</sup>
+        </div>
+
+        <p>Years Of Experience</p>
+
+      </div>
+
+    </div>
+
+
+    {/* ITEM 2 */}
+
+    <div className="home-stat-card">
+
+      <div className="home-stat-icon">
+        <FaFaceSmile />
+      </div>
+
+      <div className="home-stat-content">
+
+        <div className="home-stat-number">
+          <Counter end={1000} />
+          <sup>+</sup>
+        </div>
+
+        <p>Satisfied Clients</p>
+
+      </div>
+
+    </div>
+
+
+    {/* ITEM 3 */}
+
+    <div className="home-stat-card">
+
+      <div className="home-stat-icon">
+        <FaIndustry />
+      </div>
+
+      <div className="home-stat-content">
+
+        <div className="home-stat-number">
+          <Counter end={1500} />
+          <sup>+</sup>
+        </div>
+
+        <p>Machines Delivered</p>
+
+      </div>
+
+    </div>
+
+
+    {/* ITEM 4 */}
+
+    <div className="home-stat-card">
+
+      <div className="home-stat-icon">
+        <FaBoxOpen />
+      </div>
+
+      <div className="home-stat-content">
+
+        <div className="home-stat-number">
+          <Counter end={75} />
+          <sup>+</sup>
+        </div>
+
+        <p>Product Range</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+    {/* end top bar */}
+      {/* about */}
       <section className="about-section">
 
         <div className="about-container" >
@@ -105,7 +339,7 @@ const Home = () => {
 
 
 
-            <div className="quality-badge">
+            <div className="quality-badge1">
 
               <h2>100%</h2>
 
@@ -245,9 +479,9 @@ const Home = () => {
 
 
 
-            <button className="read-btn">
+           <Link to="/about" className="read-btn">
               Read More →
-            </button>
+            </Link>
 
 
 
@@ -305,9 +539,9 @@ const Home = () => {
                   production and consistent output.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/Soft-pvc-garden-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -334,9 +568,9 @@ const Home = () => {
                   braided hose pipes.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/PVC-braided-hose-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -363,9 +597,9 @@ const Home = () => {
                   pipe production.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/LLDPE-delivery-pipe-kissan-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -392,9 +626,9 @@ const Home = () => {
                   PVC suction hoses.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/PVC-suction-hose-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -421,9 +655,9 @@ const Home = () => {
                   pipes.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/PVC-braided-hose-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -449,9 +683,9 @@ const Home = () => {
                   Efficient extrusion plant for manufacturing transparent PVC pipes.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/HDPE-pipe-plant"className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -478,9 +712,9 @@ const Home = () => {
                   production.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/HDPE-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -507,9 +741,9 @@ const Home = () => {
                   profiles.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/PVC-profile-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -536,9 +770,9 @@ const Home = () => {
                   pipes.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/PVC-profile-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -565,9 +799,9 @@ const Home = () => {
                   duct pipes.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/PVC-suction-hose-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -594,9 +828,9 @@ const Home = () => {
                   and consistent quality.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/Tubing-pipe-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -623,9 +857,9 @@ const Home = () => {
                   production.
                 </p>
 
-                <button className="machine-btn">
+                <Link to="/Dana-plant" className="machine-btn">
                   View Details <span>↗</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -1125,112 +1359,149 @@ const Home = () => {
           CONTACT FORM
       ========================== */}
 
-            <div className="col-lg-6 col-md-12" data-aos="fade-left" data-aos-duration="1500">
+            <div
+        className="col-lg-6 col-md-12"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
+        <div className="contact-form-box">
 
-              <div className="contact-form-box">
+          <div className="contact-form-heading">
 
-                <div className="contact-form-heading">
+            <span>GET IN TOUCH</span>
 
-                  <span>GET IN TOUCH</span>
+            <h3>
+              Send Us Your Enquiry
+            </h3>
 
-                  <h3>
-                    Send Us Your Enquiry
-                  </h3>
+            <p>
+              Tell us about your machinery requirements and our team
+              will get back to you.
+            </p>
 
-                  <p>
-                    Tell us about your machinery requirements and our team
-                    will get back to you.
-                  </p>
-
-                </div>
-
-
-                <form>
-
-                  {/* Name */}
-                  <div className="form-group">
-
-                    <label>
-                      Your Name
-                    </label>
-
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your name"
-                      required
-                    />
-
-                  </div>
+          </div>
 
 
-                  {/* Email */}
-                  <div className="form-group">
+          {/* WEB3FORMS FORM */}
 
-                    <label>
-                      Email Address
-                    </label>
-
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter your email"
-                      required
-                    />
-
-                  </div>
+          <form onSubmit={onSubmit}>
 
 
-                  {/* Phone */}
-                  <div className="form-group">
+            {/* Spam Protection */}
 
-                    <label>
-                      Phone Number
-                    </label>
-
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Enter your phone number"
-                      required
-                    />
-
-                  </div>
+            <input
+              type="checkbox"
+              name="botcheck"
+              style={{ display: "none" }}
+            />
 
 
+            {/* Name */}
 
+            <div className="form-group">
 
+              <label>
+                Your Name
+              </label>
 
-                  {/* Message */}
-                  <div className="form-group">
-
-                    <label>
-                      Your Message
-                    </label>
-
-                    <textarea
-                      name="message"
-                      rows="5"
-                      placeholder="Tell us about your requirement..."
-                    ></textarea>
-
-                  </div>
-
-
-                  {/* Submit */}
-                  <button
-                    type="submit"
-                    className="contact-submit-btn"
-                  >
-                    Send Enquiry
-                    <span> → </span>
-                  </button>
-
-                </form>
-
-              </div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
 
             </div>
+
+
+            {/* Email */}
+
+            <div className="form-group">
+
+              <label>
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+
+            </div>
+
+
+            {/* Phone */}
+
+            <div className="form-group">
+
+              <label>
+                Phone Number
+              </label>
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+
+            </div>
+
+
+            {/* Message */}
+
+            <div className="form-group">
+
+              <label>
+                Your Message
+              </label>
+
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell us about your requirement..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            {/* Submit */}
+
+            <button
+              type="submit"
+              className="contact-submit-btn"
+              disabled={loading}
+            >
+              {loading ? "Sending..." : "Send Enquiry"}
+
+              {!loading && <span> → </span>}
+            </button>
+
+
+            {/* Success / Error Message */}
+
+            {result && (
+              <p
+                className="form-result"
+                style={{
+                  marginTop: "15px",
+                  color: result.includes("successfully")
+                    ? "green"
+                    : "red",
+                  fontWeight: "500",
+                }}
+              >
+                {result}
+              </p>
+            )}
+
+          </form>
+
+        </div>
+      </div>
 
           </div>
 
