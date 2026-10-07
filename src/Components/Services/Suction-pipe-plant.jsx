@@ -142,7 +142,7 @@ const Suctionpipeplant = () => {
           </a>
 
           <a
-            href="tel:+919899348723"
+            href="tel:+917971190739"
             className="call-btn"
           >
             Call Now
